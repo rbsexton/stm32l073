@@ -1,0 +1,6 @@
+[submodule "cm3lib"]
+	path = cm3lib
+	url = https://github.com/rbsexton/cm3lib.git
+[submodule "STM32CubeL0"]
+	path = STM32CubeL0
+	url = https://github.com/STMicroelectronics/STM32CubeL0.git
