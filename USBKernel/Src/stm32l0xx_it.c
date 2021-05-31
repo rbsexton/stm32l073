@@ -110,29 +110,6 @@ void USB_IRQHandler(void)
   HAL_PCD_IRQHandler(&hpcd);
 }
 
-/**
-  * @brief  This function handles DMA interrupt request.
-  * @param  None
-  * @retval None
-  * @Note   This function is redefined in "main.h" and related to DMA stream
-  *         used for USART data transmission and reception
-  */
-void USARTx_DMA_TX_IRQHandler(void)
-{
-  HAL_DMA_IRQHandler(UartHandle.hdmatx);
-}
-
-/**
-  * @brief  This function handles UART interrupt request.  
-  * @param  None
-  * @retval None
-  * @Note   This function is redefined in "main.h" and related to DMA  
-  *         used for USART data transmission     
-  */
-void USARTx_IRQHandler(void)
-{
-  HAL_UART_IRQHandler(&UartHandle);
-}
 
 /**
   * @brief  This function handles TIM interrupt request.
